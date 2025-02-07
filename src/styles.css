@@ -3,9 +3,12 @@
 :root {
   --orange: #FFA24A;
   --very-red: #FF612A;
+  --red:#E19C9D;
+  --error:#ea3739;
   --dash: #000000;
 --grey-text :#9A9A9A;
-  --input-background :#F3F3F3
+  --input-background :#F3F3F3;
+  --white : #FFFFFF
 }
 
 body {
@@ -44,4 +47,15 @@ h2 {
 
   font-size: 2.5em;
   text-transform: uppercase;
+}
+
+.button1{
+  background: var(--orange);
+border: none;
+  border-radius: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: var(--white);
+cursor: pointer;
+  min-width: 80px;
 }
