@@ -1,0 +1,55 @@
+.auth{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  background-color: white;
+}
+.auth> div:first-child{
+
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: baseline;
+}
+.auth div:first-child span{
+  font-size: 3em;
+  font-family: jost, sans-serif;
+  text-transform: uppercase;
+
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%
+}
+
+form .titleOfForm{
+  font-family: jost, sans-serif;
+}
+
+form div{
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  margin-block: 20px;
+}
+
+form div input{
+  width: 100%;
+font-size: 18px;
+  background: var(--input-background);
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
