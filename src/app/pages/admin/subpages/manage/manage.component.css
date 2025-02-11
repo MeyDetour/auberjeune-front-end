@@ -14,8 +14,16 @@
 .pageContent{
 height: 90%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.pageContent> div:last-child{
+  display: flex;
   flex-direction: column;
-  gap: 20px;
+  width: 83%;
+  gap: 25px;
 }
 
 /* legend */
@@ -64,4 +72,8 @@ height: 90%;
   font-size: 15px;
   padding: 9px 24px !important;
   box-sizing: border-box;
+}
+
+.rooms .redPatch,.rooms .greenPatch{
+  cursor: pointer;
 }

@@ -61,6 +61,8 @@ export class AuthInterceptor implements HttpInterceptor {
 
       return error.error.message;
     } else if (error.status === 0) {
+      this.router.navigate(['error']);
+
       return "Impossible de se connecter au serveur."
 
     }

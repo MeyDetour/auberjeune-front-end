@@ -12,8 +12,8 @@
   --green : #AEE19C;
   --dark-grey-text: #6C6C6C;
   --grey-text:#9A9A9A;
-  --stroke: #E7EBF0
-
+  --stroke: #E7EBF0;
+--yellow : #EFC85E;
 }
 
 body {
@@ -21,10 +21,11 @@ body {
   padding: 0px;
   min-height: 100vh;
   width: 101vw;
-  overflow-x: hidden;
   font-size: 20px;
   font-family: Inter, sans-serif;
   background: #F2F4F8;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 
@@ -125,4 +126,53 @@ font-family: "Inter", sans-serif;
 .multiChoice .focus{
   color: var(--dash);
   font-weight: 500;
+}
+
+
+/* FORM */
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+ .titleOfForm{
+  font-family: jost, sans-serif;
+}
+
+form div{
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+  margin-block: 20px;
+}
+
+form div input:not([type="checkbox"]),
+form div select{
+  width: 100%;
+  font-size: 18px;
+  background: var(--input-background);
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+form .form-check{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+}
+form .form-check input{
+
+  background: var(--input-background);
+  border: 1px solid #E3E3E3;
 }

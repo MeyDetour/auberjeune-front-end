@@ -3,10 +3,13 @@ import {UserService} from '../../../services/user.service';
 import {FailureHandler} from '../../../services/failureHandler';
 import {Router} from '@angular/router';
 import {CreationService} from '../../../services/creation.service';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-room',
-  imports: [],
+  imports: [
+    FormsModule
+  ],
   templateUrl: './room.component.html',
   styleUrl: './room.component.css'
 })

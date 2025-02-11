@@ -1,5 +1,5 @@
 export type Room = {
-  beds?: Array<{id:number,number:string,isOccupied:boolean}>,
+  beds?: Array<{id:number,number:string,occupied:boolean}>,
   bedsNumber: number,
   hasBalcony :   boolean,
   hasBin:boolean,
@@ -9,6 +9,6 @@ export type Room = {
   hasWardrobe:boolean,
   hasWashtub:boolean,
   id:boolean
-  isPrivate:boolean,
+  private:boolean,
   name:string,
 }
